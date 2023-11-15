@@ -1,0 +1,32 @@
+\usepackage{amssymb}
+\usepackage{iflang}
+\usepackage{amsthm}
+\usepackage{thmtools}
+
+% ASCII characters
+\newcommand{\bs}{\textbackslash}
+\newcommand{\circum}{\textasciicircum}
+
+% Sets
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\N}{\bb{N}}
+\newcommand{\Z}{\bb{Z}}
+\newcommand{\Q}{\bb{Q}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\C}{\bb{C}}
+
+% Functions
+
+\newcommand{\fn}[3]{\ensuremath{#1 \colon #2 \longrightarrow #3}}
+\newcommand{\func}[5]{\ensuremath{\fn{#1}{#2}{#3}, #4 \longmapsto #5}}
+
+% Theorems
+\newtheorem{theorem}{\IfLanguageName{ngerman}{Satz}{Theorem}}
+\newtheorem{corollary}{\IfLanguageName{ngerman}{Korallar}{Corollary}}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+\newtheorem{axiom}{Axiom}
+\newcommand{\printglossary}{
+    \IfLanguageName{ngerman}{\listoftheorems[title=Glossar]}{\listoftheorems[title=Glossary]}
+}

@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\input{emtex}
+
+\title{EmTeX}
+\author{Emil Engler}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+EmTeX is a collection of \LaTeX macros maintained by myself since my first semester of university.
+
+\section{ASCII}
+
+The following shorthands for ASCII exist:
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Macro & Output \\
+        \hline
+        \texttt{\bs bs} & \bs \\
+        \texttt{\bs circum} & \circum \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\section{Sets}
+
+The set-related macros exist:
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Macro & Output \\
+        \hline
+        \texttt{\bs bb\{X\}} & $\bb{X}$ \\
+        \hline
+        \texttt{\bs N} & $\N$ \\
+        \texttt{\bs Z} & $\Z$ \\
+        \texttt{\bs Q} & $\Q$ \\
+        \texttt{\bs R} & $\R$ \\
+        \texttt{\bs C} & $\C$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\section{Functions}
+
+There are two macros used for functions:
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Macro & Output \\
+        \hline
+        \texttt{\bs fn\{f\}\{A\}\{B\}} & $\fn{f}{A}{B}$ \\
+        \texttt{\bs func\{f\}\{A\}\{B\}\{x\}\{x\circum2\}} & $\func{f}{A}{B}{x}{x^2}$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\section{Theorems}
+There are localized versions for the following theorem environments:
+\begin{itemize}
+    \item \texttt{theorem}
+    \item \texttt{corallary}
+    \item \texttt{lemma}
+    \item \texttt{definition}
+    \item \texttt{notation}
+    \item \texttt{axiom}
+\end{itemize}
+
+You can also generate a glossary of all commands using the \texttt{\bs printglossary} command.
+
+\end{document}
